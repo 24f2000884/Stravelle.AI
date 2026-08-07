@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Stravelle</title>
+<meta name="description" content="Get in touch with Stravelle. Building an AI-literate society from New Delhi, India.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233d3954'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f6cd52'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span>Stravelle</span><span class="dot"></span></a>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-dark" href="contact.html">Get in touch</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="contact-page">
+    <div class="contact-banner" id="contactBanner"></div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2>Reach us directly</h2>
+        <p>Building an AI-literate society.</p>
+        <div class="cinfo">
+          <div class="lbl">✉ Email</div>
+          <div class="val">stravelle.inc@gmail.com</div>
+        </div>
+        <div class="cinfo">
+          <div class="lbl">Phone</div>
+          <div class="val">+91 92170 70963</div>
+        </div>
+        <div class="cinfo">
+          <div class="lbl"> Headquarters</div>
+          <div class="val">New Delhi, India</div>
+        </div>
+      </div>
+      <div class="contact-right" id="contactRight">
+        <!--
+          FORM SETUP (read me before deploying):
+          This form sends to FormSubmit.co, a free form-to-email service —
+          no backend or API key required. The endpoint below is set to
+          stravelle.inc@gmail.com. If that isn't the inbox you want messages
+          to land in, change the address in data-endpoint below to your own.
+
+          FIRST-TIME ACTIVATION: the very first submission to any email
+          address triggers a one-time confirmation email from FormSubmit.
+          Someone with access to that inbox must click the confirmation
+          link before further submissions will be delivered. See README.md.
+        -->
+        <form id="contactForm" data-endpoint="https://formsubmit.co/ajax/stravelle.inc@gmail.com">
+          <input type="hidden" name="_subject" value="New message from Stravelle website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <div class="field"><label>Name *</label><input type="text" name="Name" placeholder="Aarav Sharma" required></div>
+            <div class="field"><label>Email *</label><input type="email" name="Email" placeholder="aarav@example.com" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Organization</label><input type="text" name="Organization" placeholder="Company / Institution"></div>
+            <div class="field"><label>Subject</label><input type="text" name="Subject" placeholder="How can we help?"></div>
+          </div>
+          <div class="field" style="margin-bottom:24px;">
+            <label>Message *</label>
+            <textarea name="Message" placeholder="We would love to collaborate on AI literacy workshops." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark submit-btn">Send message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span>Stravelle</span><span class="dot"></span></div>
+        <p>Building an AI-literate society. A technology-driven, human-centered approach to AI literacy for everyone.</p>
+      </div>
+      <div class="footer-col">
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="index.html">Home ↗</a></li>
+          <li><a href="about.html">About ↗</a></li>
+          <li><a href="contact.html">Contact ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Contact</h6>
+        <ul>
+          <li>stravelle.inc@gmail.com</li>
+          <li>+91 92170 70963</li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stravelle Private Limited. All rights reserved.</span>
+      <span>Technology &amp; Innovation · Startup · New Delhi, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
