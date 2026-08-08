@@ -216,7 +216,7 @@ footer{background:var(--navy);color:#cfcbe1;padding:70px 0 0;}
 }
 
 /* ---------- ABOUT ---------- */
-.about-hero{background:var(--navy);color:#fff;padding:90px 0 56px;}
+.about-hero{background:var(--navy);color:#fff;padding:56px 0 56px;}
 .about-hero .wrap{max-width:760px;}
 .about-hero h1{font-family:'Fraunces',serif;font-size:46px;font-weight:600;line-height:1.16;margin-bottom:22px;}
 .about-hero p{color:#c9c5dd;font-size:17.5px;line-height:1.7;}
