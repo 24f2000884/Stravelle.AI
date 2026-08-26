@@ -137,7 +137,19 @@ h1.hero-h1 mark{
 h2.section-h2{font-family:'Fraunces',serif;font-weight:600;font-size:42px;line-height:1.14;letter-spacing:-.01em;}
 
 /* ---------- MANIFESTO ---------- */
-.manifesto-head{max-width:640px;margin-bottom:56px;}
+.manifesto-top{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px;}
+.manifesto-head{max-width:520px;}
+.manifesto-media{
+  position:relative;aspect-ratio:16/10;border-radius:var(--radius-lg);overflow:hidden;
+  background:radial-gradient(120% 100% at 25% 20%, #4a4468 0%, #322e49 55%, #2a273e 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+}
+.manifesto-media .ph-play{
+  width:60px;height:60px;border-radius:50%;background:var(--yellow);
+  display:flex;align-items:center;justify-content:center;
+}
+.manifesto-media .ph-play svg{margin-left:3px;}
+.manifesto-media .ph-label{color:#d9d5ea;font-size:13px;font-weight:600;letter-spacing:.04em;}
 .manifesto-row{
   display:grid;grid-template-columns:110px 1fr;gap:32px;padding:36px 0;
   border-top:1px solid var(--border-light);
@@ -174,7 +186,13 @@ h2.section-h2{font-family:'Fraunces',serif;font-weight:600;font-size:42px;line-h
 .banner{background:var(--navy);padding:0 0 100px;}
 .banner-inner{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
 .banner-art{position:relative;border-radius:var(--radius-lg);overflow:hidden;height:340px;}
-.banner-art svg{width:100%;height:100%;display:block;}
+.banner-art .image-placeholder{
+  position:absolute;inset:0;
+  background:repeating-linear-gradient(135deg,#332f49,#332f49 14px,#3a3654 14px,#3a3654 28px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+}
+.banner-art .image-placeholder .ph-label{color:#e4e1f0;font-size:14.5px;font-weight:600;}
+.banner-art .image-placeholder .ph-sub{color:#9c97b6;font-size:12.5px;}
 .banner-art .overlay-text{
   position:absolute;left:32px;bottom:28px;color:#fff;
   font-family:'Fraunces',serif;font-size:30px;font-weight:600;
@@ -218,7 +236,7 @@ footer{background:var(--navy);color:#cfcbe1;padding:70px 0 0;}
 /* ---------- ABOUT ---------- */
 .about-hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding: 90px 0 56px;}
 .about-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,57,84,0) 0%, var(--navy)100%), url("about-hero-bg.png")center/cover no-repeat; z-index:0;}
-.about-hero.wrap{position:relative;z-index:1;}
+.about-hero .wrap{position:relative;z-index:1;}
 .about-hero h1{font-family:'Fraunces',serif;font-size:46px;font-weight:600;line-height:1.16;margin-bottom:22px;}
 .about-hero p{color:#c9c5dd;font-size:17.5px;line-height:1.7;}
 
@@ -317,6 +335,7 @@ footer{background:var(--navy);color:#cfcbe1;padding:70px 0 0;}
   .hamburger{display:flex;}
   .nav-right .btn-dark{padding:11px 18px;font-size:13.5px;}
   .approach-grid{grid-template-columns:1fr;}
+  .manifesto-top{grid-template-columns:1fr;}
   .serve-grid{grid-template-columns:1fr;}
   .serve-cards{grid-template-columns:1fr;}
   .about-grid{grid-template-columns:1fr;}
