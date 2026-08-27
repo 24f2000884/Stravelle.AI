@@ -131,7 +131,7 @@ h1.hero-h1 mark{
 @keyframes scrollx{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* ---------- SECTIONS ---------- */
-.section{padding:100px 0;}
+.section{padding:50px 0;}
 .section-light{background:var(--cream);}
 .section-dark{background:var(--navy);color:#fff;}
 h2.section-h2{font-family:'Fraunces',serif;font-weight:600;font-size:42px;line-height:1.14;letter-spacing:-.01em;}
