@@ -82,7 +82,7 @@ nav.links a.active{opacity:1;border-color:var(--yellow-dark);}
 /* ---------- HERO ---------- */
 .hero{background:var(--navy);color:#fff;padding:76px 0 0;overflow:hidden;position:relative;}
 .hero-bg{position:absolute;inset:0;z-index:0;}
-.hero-bg-video{width:100%;height:100%;object-fit:cover;display:block;opacity: 0.8;}
+.hero-bg-video{width:100%;height:100%;object-fit:cover;display:block;opacity: 0.9;}
 .hero-bg-overlay{
   position:absolute;inset:0;
   background:linear-gradient(100deg,var(--navy) 0%,rgba(61,57,84,.72) 42%,rgba(61,57,84,.3) 100%);
@@ -147,15 +147,6 @@ h2.section-h2{font-family:'Fraunces',serif;font-weight:600;font-size:42px;line-h
 /* ---------- MANIFESTO ---------- */
 .manifesto-top{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px;}
 .manifesto-head{max-width:520px;}
-.manifesto-media{
-  position:relative;aspect-ratio:16/9;border-radius:var(--radius-lg);overflow:hidden;
-  background:#2a273e;
-}
-.manifesto-media .manifesto-video{
-  width:100%;height:100%;object-fit:cover;display:block;
-}
-.manifesto-illustration{margin-bottom:56px;}
-.manifesto-illustration svg{width:100%;height:auto;display:block;}
 .manifesto-row{
   display:grid;grid-template-columns:110px 1fr;gap:32px;padding:36px 0;
   border-top:1px solid var(--border-light);
