@@ -128,7 +128,7 @@ h1.hero-h1 mark{
 }
 
 /* ---------- MARQUEE ---------- */
-.marquee{background:var(--yellow);overflow:hidden;padding:0px 0px;}
+.marquee{background:var(--yellow);overflow:hidden;padding:10px 0px 10px;}
 .marquee-track{display:flex;width:max-content;animation:scrollx 26s linear infinite;}
 .marquee-track span{
   font-family:'Fraunces',serif;font-weight:600;font-size:34px;color:var(--ink);
