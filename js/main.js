@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // ----- Marquee content (Home page only) -----
   const track = document.getElementById('marqueeTrack');
   if (track) {
-    const words = ["Adapt", "Learn", "Lead", "Trust", "Build", "Understand", "Question"];
+    const words = ["Build for Bharat, Screen Smart, AI for All, Build for Bharat, Screen Smart, AI for All"];
     const loopWords = [...words, ...words, ...words, ...words];
     track.innerHTML = loopWords.map(w => `<span>${w}</span>`).join('');
   }
@@ -26,11 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.manifesto-row, .serve-card').forEach(el => obs.observe(el));
 
   // ----- Contact form -----
-  // Uses FormSubmit.co (no backend needed). The form submits via AJAX to
-  // https://formsubmit.co/ajax/<your-email> and FormSubmit relays it to your inbox.
-  // IMPORTANT: the first-ever submission to a new email address triggers a one-time
-  // confirmation email from FormSubmit — you must click that link before submissions
-  // will actually arrive in your inbox. See README.md for full setup steps.
   const form = document.getElementById('contactForm');
   const contactRight = document.getElementById('contactRight');
   const contactBanner = document.getElementById('contactBanner');
