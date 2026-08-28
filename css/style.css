@@ -144,7 +144,7 @@ h1.hero-h1 mark{
 h2.section-h2{font-family:'Georgie',serif;font-weight:600;font-size:42px;line-height:1.14;letter-spacing:-.01em;}
 
 /* ---------- MANIFESTO ---------- */
-.manifesto-top{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:56px;}
+.manifesto-top{align-items:end;margin-bottom:56px;}
 .manifesto-head{max-width:520px;}
 .manifesto-row{
   display:grid;grid-template-columns:110px 1fr;gap:32px;padding:36px 0;
