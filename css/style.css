@@ -89,7 +89,6 @@ nav.links a.active{opacity:1;border-color:var(--yellow-dark);}
 }
 .hero-grid{
   position:relative;z-index:1;
-  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;
   max-width:var(--maxw);margin:0 auto;padding:0 40px 60px;
 }
 .hero-pill{
