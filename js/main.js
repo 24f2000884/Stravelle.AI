@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // ----- Marquee content (Home page only) -----
   const track = document.getElementById('marqueeTrack');
   if (track) {
-    const words = ["Build for Bharat, Screen Smart, AI for All, Build for Bharat, Screen Smart, AI for All"];
+    const words = ["Build for Bharat",  "Screen Smart",  "AI for All",  "Build for Bharat",  "Screen Smart",  "AI for All"];
     const loopWords = [...words, ...words, ...words, ...words];
     track.innerHTML = loopWords.map(w => `<span>${w}</span>`).join('');
   }
