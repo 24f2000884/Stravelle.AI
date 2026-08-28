@@ -181,7 +181,7 @@ h2.section-h2{font-family:'Fraunces',serif;font-weight:600;font-size:42px;line-h
 /* ---------- BANNER ---------- */
 .banner{background:var(--navy);padding:0 0 100px;}
 .banner-inner{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
-.banner-art{ position:relative;border-radius:var(--radius-lg);overflow:hidden;height: 480px; aspect-ratio: 4 / 1; background-image:linear-gradient(
+.banner-art{ position:relative;border-radius:var(--radius-lg);overflow:hidden;height: 480px; background-image:linear-gradient(
       90deg,
       rgba(10, 18, 45, 0.82) 0%,
       rgba(10, 18, 45, 0.55) 45%,
