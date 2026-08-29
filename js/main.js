@@ -17,13 +17,54 @@ document.addEventListener('DOMContentLoaded', function () {
     track.innerHTML = loopWords.map(w => `<span>${w}</span>`).join('');
   }
 
-  // ----- Scroll fade-in -----
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('in-view');
-    });
-  }, { threshold: .2 });
-  document.querySelectorAll('.manifesto-row, .serve-card').forEach(el => obs.observe(el));
+// ----- Scroll fade-in + stat card animation -----
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      entry.target.classList.add('in-view');
+
+      // Animate stat number
+      const number = entry.target.querySelector('.num');
+
+      if (number && !number.dataset.animated) {
+        number.dataset.animated = 'true';
+
+        const target = parseInt(number.dataset.target);
+        const suffix = number.dataset.suffix || '';
+
+        const duration = 1500;
+        const startTime = performance.now();
+
+        function updateNumber(currentTime) {
+          const progress = Math.min(
+            (currentTime - startTime) / duration,
+            1
+          );
+
+          // Smooth ease-out
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+          const currentValue = Math.floor(
+            target * easedProgress
+          );
+
+          number.textContent = currentValue + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(updateNumber);
+          }
+        }
+
+        requestAnimationFrame(updateNumber);
+      }
+    }
+  });
+}, { threshold: .2 });
+
+document
+  .querySelectorAll('.manifesto-row, .serve-card, .stat-card')
+  .forEach(el => obs.observe(el));
 
   // ----- Contact form -----
   const form = document.getElementById('contactForm');
