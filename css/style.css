@@ -185,7 +185,7 @@ h2.section-h2{font-family:'Georgie',serif;font-weight:600;font-size:42px;line-he
       90deg,
       rgba(10, 18, 45, 0.82) 0%,
       rgba(10, 18, 45, 0.55) 45%,
-      rgba(10, 18, 45, 0.10) 100%),url("banner-image.jpg");background-size: cover; background-position: center;}
+      rgba(10, 18, 45, 0.10) 100%),url("image-banner.jpg");background-size: cover; background-position: center;}
 .banner-art .overlay-text{
   position:absolute;left:32px;bottom:28px;color:#fff;
   font-family:'Fraunces',serif;font-size:30px;font-weight:600;
