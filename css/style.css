@@ -158,7 +158,7 @@ h2.section-h2{font-family:'Georgie',serif;font-weight:600;font-size:42px;line-he
 .manifesto-row.in-view{opacity:1;transform:translateY(0);}
 .manifesto-num{font-family:'Fraunces',serif;font-size:52px;font-weight:600;color:#d8d5e6;}
 .manifesto-row.in-view .manifesto-num{color:#c9c5df;}
-.manifesto-body h3{font-family:'Fraunces',serif;font-size:25px;font-weight:600;margin-bottom:12px;}
+.manifesto-body h3{font-family:'Georgie',serif;font-size:25px;font-weight:600;margin-bottom:12px;}
 .manifesto-body p{color:var(--muted);font-size:16px;max-width:640px;line-height:1.7;}
 
 /* ---------- APPROACH ---------- */
