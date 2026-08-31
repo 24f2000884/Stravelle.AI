@@ -143,7 +143,7 @@ h1.hero-h1 mark{
 /* ---------- SECTIONS ---------- */
 .section{padding:50px 0;}
 .section-light{background:var(--cream);}
-.section-dark{background:var(--navy);color:#fff;}
+.section-dark{background:var(--navy);color:#fff;padding:50px 0px 20px;}
 h2.section-h2{font-family:'Georgie',serif;font-weight:600;font-size:42px;line-height:1.14;letter-spacing:-.01em;}
 
 /* ---------- MANIFESTO ---------- */
